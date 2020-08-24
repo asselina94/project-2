@@ -1,0 +1,83 @@
+/* Potter Font */
+@import 'https://fonts.googleapis.com/css?family=Galdeano';
+h1, h3, h2, li, .btn {
+  font-family: 'Galdeano'; 
+}
+
+.nav-item {
+  margin-right: 100pt;
+}
+#timer {
+  text-align: right;
+  font-size: 400%;
+  margin-right: 100px;
+}
+.container {
+  max-width: 600px;
+}
+th {
+  text-align: center;
+}
+/*  Marauders Map Effect  */
+h1, #scores, .form-group, .clear, .welcome, .table-hover {
+      animation: one 1.5s 1;
+      animation-fill-mode: forwards;  /*kills it on the last frame*/
+      
+      opacity: 40%;
+}
+
+@media only screen and (max-width: 800px){
+  .nav-item{
+    margin-right: 0pt;
+  }
+}
+
+
+
+
+  /* Standar Browsers  */
+@keyframes one {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .25;
+  }
+  65% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+    /*Safari*/
+@-webkit-keyframes one {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .25;
+  }
+  65% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+  /* Edge & IE  */
+@-ms-keyframes one {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .25;
+  }
+  65% {
+    opacity: .75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
